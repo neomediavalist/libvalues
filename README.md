@@ -1,6 +1,6 @@
 # neomediavalist.github.io/libvalues/
 
-The LibertarianValues Quiz measures and analyzes various aspects of libertarian viewpoints over the course of 60 questions, with five axes of values. LibertarianValues is based upon [LibertarianValues](https://leftvalues.github.io/](https://polittest.github.io/libertarianvalues/auth/).
+The LibertarianValues Quiz measures and analyzes various aspects of libertarian viewpoints over the course of 60 questions, with five axes of values. LibertarianValues is based upon [LibertarianValues]([https://leftvalues.github.io/](https://polittest.github.io/libertarianvalues/auth/)).
 
 ### License
 
