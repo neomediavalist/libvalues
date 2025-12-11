@@ -1,216 +1,119 @@
+<!DOCTYPE html>
+<html>
+
 <head>
-
-<!-- redirect -->
-<script>
-  window.location.replace("./auth");
-</script>
-
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet">  
-<link href='style.css' rel='stylesheet' type='text/css'>
-<title>PoliticalTests</title>
-<link rel="icon" type="image/png" href="icon.png">
-<link rel="shortcut icon" type="image/png" href="icon.png">
-<meta charset="utf-8">
-  
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700%7CRoboto:400,700" rel="stylesheet">
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <title>LibertarianValues</title>
+    <link rel="icon" type="image/svg" href="icon.svg">
+    <link rel="shortcut icon" type="image/svg" href="icon.svg">
+    <meta charset="utf-8">
 </head>
 
-<body>  
-  <!--  Header -->
-  <div class="headerimg">
-    <div class="headertextdiv">
-      <h1 class="headertext">PoliticalTests</h1>
-      <h3 class="headertext">Scroll down to view tests.</h3>
-    </div>
-  </div>
-  
-  <!-- Menu Bar -->
-  <ul id="menubarcode" class="navbar">
-    <li><a class="active" href="https://politicaltests.github.io/"><b><span class="material-icons" style="margin-right: 5px;">home</span></b>Home</a></li> 
-    <li><a href="https://rightvaluestest.github.io/">RightValues</a></li>
-    <li><a href="https://politicaltests.github.io/auth">AuthValues</a></li>
-    <li><a href="https://politicaltests.github.io/12axes">12Axes</a></li>
-    <!-- <div class="dropdown"> <a class="dropbtn">More</a>
-       <div class="dropdown-content">
-         <a href="https://10groups.github.io/">10Groups</a>
-         <a href="https://8dreams.github.io/">8Dreams</a>
-         <a href="https://politicaltests.github.io/">InfValues</a>
-         <a href="https://soiltexturetest.github.io/">SoilTextureTest</a>
-       </div>
-    </div> -->
-    <li style="float:right"><a class="active" href="https://github.com/politicaltests/politicaltests.github.io"><b><span class="material-icons">code</span></b></a></li>  
-  </ul>
-  
-  <!-- <div class="element"> -->
-  <div class="main">
-  
-  <h2>Welcome. Enter a test to begin. </h2>
-    <p> This website links to all my tests, in order to make it easier to access my tests. It also helps me reduce the number of accounts needed if I were to create more tests in the future. The date of each test is formatted in YYYY/MM/DD.</p>
-    
-  <!-- <div id="icondef">  <br>
-    <p><b>Subtitle Icons:</b></p>
-      <p> <b><span class="material-icons">star</span>: </b>Actively Maintained</p>
-      <p> <b><span class="material-icons">star_half</span>: </b>Rarely Maintained</p>
-      <p> <b><span class="material-icons">star_outline</span>: </b>Abandoned</p>
-      <p> <b><span class="material-icons">tune</span>: </b>Work in Progress</p>
-  </div>
-    
-  <br>
-    
-  <p style="color: #777; font-weight: bolder; font-size: 18px; cursor: pointer;"><a onclick="expandDesc()"><b>Expand / Hide</b></a></p> --->
-  <!-- </div> -->
-  <br><br>
-  
-<div id="tests">
-  
-  <div class="topbtns">
-  <input class="search" placeholder="Search" />
-    
-    <div class="sortbtnlist" style="display:inline-block;">
-      <button class="sort" data-sort="title">Name</button> 
-      <button class="sort" data-sort="material-icons">Status</button> 
-      <button class="sort" data-sort="date">Date Created</button> 
-    </div>
-    
-  </div>
-  
-  <ul class="list">
-  
-  <li class="gallery" onclick="location.href='https://rightvaluestest.github.io/';">
-    <img class="image" src="https://rightvaluestest.github.io/img/allvalues.png">
-    <div class="title"> <b> RightValues </b> </div>
-    <div class="subtitle"><span class="material-icons">star</span> <p class="date">• 2020/02/14</p></div>
-    <div class="desc"> RightValues is a quiz for the people on the right of the spectrum, based upon and serves as the alternative to the LeftValues quiz. If you are not a rightist, this quiz is obviously not suited for you, and you should look for the LeftValues instead.</div>
-  </li>
-  
-  <li class="gallery" onclick="location.href='https://10groups.github.io/';">
-    <img src="https://10groups.github.io/compassimage.png"> 
-    <div class="title"> <b> 10Groups </b> </div>
-    <div class="subtitle"><span class="material-icons">star_half</span> <p class="date">• 2020/07/25</p></div>
-    <div class="desc"> 10Groups is a political compass test that examines one's political beliefs on a variety of compasses, each representing a group of views. The test is based on different parts from SapplyValues and 8values.</div>
-  </li>
-  
-  <li class="gallery" onclick="location.href='https://soiltexturetest.github.io/';">
-   <img class="image" src="https://soiltexturetest.github.io/values.png">
-   <div class="title"> <b> SoilTextureCompass </b> </div>
-   <div class="subtitle"><span class="material-icons">star_outline</span> <p class="date">• 2020/05/07</p></div>
-   <div class="desc"> SoilTextureTest is, in essence, a quiz that attempts to assign the type of material without you actually tasting it or evaluating it. It's a parody test, made for r/SoilTextureCompass.</div>
-  </li>
-      
-  <li class="gallery" onclick="location.href='https://8dreams.github.io/';">
-    <img class="image" src="https://8dreams.github.io/values.png"> 
-    <div class="title"> <b> 8Dreams </b> </div> 
-    <div class="subtitle"><span class="material-icons">star_outline</span> <p class="date">• 2020/05/27</p></div>
-    <div class="desc"> 8Dreams, based on 8values, is a political quiz that attempts to assign percentages for eight different off-compass political values. There are four independent axes - Propietary, Mastery, Individuality, and Prioritative - and each has two opposing values assigned to them.</div>
-  </li>
-    
-  <li class="gallery" onclick="location.href='https://politicaltests.github.io/inf';">
-    <img class="image" src="inf/indeximg.png">
-    <div class="title"> <b> InfValues </b> </div>
-    <div class="subtitle"><span class="material-icons">star_outline</span> <p class="date">• 2020/09/07</p></div>
-    <div class="desc"> InfValues (short for Infinite Values), is based on SapplyValues, which is in turn based on 8values. It contains 45 Axes. with 8 values each (Moderate, Regular, Extreme, Off-Compass).</div>
-  </li>
-  
-  <li class="gallery" onclick="location.href='https://politicaltests.github.io/auth';">
-    <img class="image" src="auth/values.png">
-    <div class="title"> <b> AuthValues </b> </div> 
-    <div class="subtitle"><span class="material-icons">star_half</span> <p class="date">• 2020/12/09</p></div>
-    <div class="desc"> AuthValues is a political test made for people who support an Authoritarian government. It seeks to identify the positions and values of Authoritarians. If you are a Libertarian, this quiz is obviously not made for you, but you can try taking it anyways.</div>
-  </li>
-  
-  <li class="gallery" onclick="location.href='https://politicaltests.github.io/12axes';">
-    <img class="image" src="12axes/values.png">
-    <div class="title"> <b> 12Axes </b> </div> 
-    <div class="subtitle"><span class="material-icons">star_half</span> <p class="date">• 2021/02/27</p></div>
-    <div class="desc"> 12axes, based off of 9axes, is a political quiz that tries to improve the 9axes test by reorganizing, improving, and patching errors within the test. It assigns your political beliefs in 12 different axes that are grouped in 4 different categories.</div>
-  </li>
-   
-  <li class="gallery" onclick="location.href='https://politicaltests.github.io/6foundations/';">
-    <img class="image" src="https://politicaltests.github.io/6foundations/values.png">
-    <div class="title"> <b> 6Foundations </b> </div> 
-    <div class="subtitle"><span class="material-icons">star</span> <p class="date">• 2021/09/05</p></div>
-    <div class="desc"> 6Foundations is a political and moral test based on the Moral Foundations Theory. This test aims to predict a person's political beliefs from their moral values, based on how important an issue is to a person, or how much a person agrees with a statement.</div>
-  </li>
-   
-</ul> <!-- Gallery List -->
-</div> <!-- List Div-->
-  
-<br>  
-  <hr>
-  
-  <h2>Other Tests</h2>
-    <p>Here are some other tests that are unique and good in their own ways. These tests are not made by me.</p> <br>
-  
-  <div class="grid">
-    
-  <div class="grid-item" style="border-style: none solid solid none; border-radius: 22px 0px 0px 0px;" onclick="location.href='https://8values.github.io/';">
-    <span class="material-icons">filter_8</span>
-    <div class="gridtext"> <p class="title"> 8Values </p> 
-    <p class="desc"> 8values is a political quiz that attempts to assign percentages for eight different political values. These values are Equality, Markets, Nation, Globe, Liberty, Authority, Progress and Tradition.</p></div>
-  </div>
-  
-  <div class="grid-item" style="border-style: none none solid none; border-radius: 0px 22px 0px 0px;" onclick="location.href='https://9axes.github.io/';">
-    <span class="material-icons">filter_9</span>
-    <div class="gridtext"> <p class="title"> 9Axes </p> 
-    <p class="desc"> 9Axes, based off of 8values is a political quiz that attempts to assign percentages on nine different political axes. At the end of the quiz, your answers will be compared to the maximum possible for each value, thus giving you a percentage. Answer honestly!</p></div>
-  </div>
+<body>
+    <a href="https://github.com/neomediavalist/libvalues" class="github-corner"
+        aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250"
+            style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg></a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
 
-  <div class="grid-item" style="border-style: none solid solid none; border-radius: 0px;" onclick="location.href='https://prismquiz.github.io/';">
-    <span class="material-icons">pie_chart</span>
-    <div class="gridtext"> <p class="title"> Prism Political Quiz </p> 
-    <p class="desc"> Prism Political Quiz attempts to provide you with the breakdown of your ideology in 5 dimensions: Government, Economy, Society, Religion, and Foreign Policy. It gives you a number of statements and asks you to pick the one that best represents your views.</p></div>
-  </div>
-  
-  <div class="grid-item" style="border-style: none none solid none; border-radius: 0px;" onclick="location.href='https://sapplyvalues.github.io/';">
-    <span class="material-icons">window</span>
-    <div class="gridtext"> <p class="title"> SapplyValues </p> 
-    <p class="desc"> SapplyValues is a political compass test that combines the questions of the Sapply test with the UI of 8values. At the end of the quiz, your answers will be displayed on a political compass.</p></div>
-  </div>
+        @keyframes octocat-wave {
 
-  <div class="grid-item" style="border-style: none solid solid none; border-radius: 0px;" onclick="location.href='https://quark88.github.io/econvalues/';">
-    <span class="material-icons">monetization_on</span>
-    <div class="gridtext"> <p class="title"> EconValues </p> 
-    <p class="desc"> EconValues is a test created by Solar#5896 that attempts to measure desired economic systems on 8 axes. There are 8 independent axes - Incentive, Structure, Intervention, Centralisation, Technology, Land, Inheritance and Labor.</p></div>
-  </div>
+            0%,
+            100% {
+                transform: rotate(0)
+            }
 
-  <div class="grid-item" style="border-style: none none solid none; border-radius: 0px;" onclick="location.href='https://leftvalues.github.io';">
-    <span class="material-icons">construction</span>
-    <div class="gridtext"> <p class="title"> LeftValues </p> 
-    <p class="desc"> LeftValues is a leftist quiz inspired by and based upon the 8values quiz that seeks to identify your position on the left-wing spectrum. If you are not a leftist, this quiz is obviously not suited for you.</p></div>
-  </div>
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
 
-  <div class="grid-item" style="border-style: none solid none none; border-radius: 0px 0px 0px 22px;" onclick="location.href='https://ideosorter.github.io';">
-    <span class="material-icons">account_tree</span>
-    <div class="gridtext"> <p class="title"> Ideosorter </p> 
-    <p class="desc"> Ideosorter is, in essence, a political quiz that attempts to assign an ideology that matches your views the closest by asking questions to you based on a flowchart model.</p></div>
-  </div>
-  
-  <div class="grid-item" style="border-style: none none none none; border-radius: 0px 0px 22px 0px;" onclick="location.href='https://dozenvalues.github.io/test/index.html';">
-    <span class="material-icons">blur_circular</span>
-    <div class="gridtext"> <p class="title"> DozenValues </p> 
-    <p class="desc"> DozenValues is a political test that aims to map differing political perspectives onto six axes. These axes are Ownership, Market, Power, Autonomy, Identity and Progress.</p> </div>
-  </div>
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
 
-  </div>
-  
-</div>
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <h1>LibertarianValues 1.0</h1>
+    <hr>
+    <button class="button" onclick="location.href='instructions.html';"
+        style="font-size:36pt;">Click here to start!</button>
+    <img src="values.svg" class="center" alt="The values being differentiated in this quiz" style="width: 600px;" />
+
+    <h2>What is LibertarianValues?</h2>
+    <p>LibertarianValues is a libertarian quiz inspired by the <a
+            href="https://polittest.github.io/libertarianvalues/auth/">LibertarianValues by polittest</a> quiz that seeks to identify your position on the libertarian
+        spectrum. If you are not a libertarian, this quiz is obviously not suited for you. You will be presented with a
+        statement, and then you will answer with your opinion on the statement, from <b>Strongly Agree</b> to
+        <b>Strongly Disagree</b>, with each answer slightly affecting your scores. The questions for each axes are
+        presented in order, rather than scattered. At the end of the quiz, your answers will be compared to the maximum
+        possible for each value, thus giving you a percentage. Answer honestly!<br /><br />
+        There are <b>54</b> questions in the test.</p>
+
+    <h2>What are the values?</h2>
+    <p>There are currently six axes, each of which has two opposing values. They are:</p>
+    <p class="value-description"><b style="color:#ffffff;">Authority</b> <b>vs.</b> <b
+            style="color:#1d1d1d;">Anarchy</b><br />
+        Those with a higher revolution score tend to support a radical and rapid overthrow of the capitalist system
+        through a mass uprising. Those with a higher reform score tend to favor inducing gradual changes within
+        capitalist structures, such as liberal democracy, with the eventual goal of reaching socialism.</p>
+    <p class="value-description"><b style="color:#aa8800ff;">Hierarchy</b> <b>vs.</b> <b
+            style="color:#6f918aff;">Heterarchy</b><br />
+        Those with higher voluntaristic scores believe social change stems from human will and consciousness, while 
+        those with higher economistic scores believe material and economic conditions fundamentally determine social 
+        development.</p>
+    <p class="value-description"><b style="color:#ff0000ff;">Planning</b> <b>vs.</b> <b
+            style="color:#ffd42aff;">Markets</b><br />
+        Those with a higher central score tend to support an economic structure based around centralized national
+        planning. Those with a higher decentral score tend to support an economic structure based around decentralized
+        planning, usually on a more localized scale.</p>
+    <p class="value-description"><b style="color:#aa0000ff;">Collectivism</b> <b>vs.</b> <b
+            style="color:#5fbcd3ff;">Individualism</b><br />
+        Those with a higher international score tend to support forming an international socialist movement, often with
+        the eventual goal of abolishing nations. Those with a higher patriotic score tend to prioritize building
+        socialism within existing borders and reject the goal of a world socialist republic.</p>
+    <p class="value-description"><b style="color:#c8e4bcff;">Horizontal</b> <b style="color:#e1c6dfff;">Unity</b> <b>vs.</b> <b
+            style="color:#f9babaff;">Vertical</b> <b style="color:#92d9f8ff;">Unity</b><br />
+        Those with a higher party score tend to favor using political parties as the basis of a socialist movement.
+        Those with a higher union score tend to favor using trade unions and other forms of mass organization as a basis
+        of a socialist movement. Being pro-party does not necessarily mean you oppose unions and vice versa, it is more
+        about preference.</p>
+    <h2>What does "Closest Match" mean in the results?</h2>
+    <p>Similar to 8values, this quiz will attempt to match you with a specific libertarian
+        ideology. There are currently fourteen possible ideologies, with more to come in the future. This is a work in
+        progress and may not work as intended. Suggestions are very welcome.</p>
+    <p><br /><br />
+        8values is licensed under the MIT License, which permits "without restriction" the rights to "use, copy, modify,
+        merge, publish, distribute, sublicense, and/or sell
+        copies of the Software". LibertarianValues is thus able to legally modify the original 8values without infringing on
+        any copyright. LibertarianValues also utilizes the same license.</p>
+
+    <!-- This is the script for the page itself -->
+    <script type="application/javascript" src="questions.js"></script>
+    <script type="text/javascript">
+        document.getElementById("numOfQuestions").innerHTML = Object.size(questions)
+    </script>
 </body>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
-<script>
-  var options = {
-    valueNames: [ 'title', 'material-icons', 'date' ]
-  };
-
-  var userList = new List('tests', options);
-  
-  function expandDesc() {
-    var x = document.getElementById("icondef");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-} 
-</script>
+</html>
