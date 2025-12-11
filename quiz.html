@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700%7CRoboto:400,700" rel="stylesheet">
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <title>LibertarianValues Quiz</title>
+    <link rel="icon" type="image/svg" href="icon.svg">
+    <link rel="shortcut icon" type="image/svg" href="icon.svg">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script type="application/javascript" src="questions.js"></script>
+
+    <h2 style="text-align:center;" id="question-number">Loading...</h2>
+    <p class="question" id="question-text"></p>
+    <button class="button" onclick="nextQuestion( 1.0)"
+        style="background-color: #1b5e20;">Strongly Agree</button> <br>
+    <button class="button" onclick="nextQuestion( 0.5)"
+        style="background-color: #4caf50;">Agree</button> <br>
+    <button class="button" onclick="nextQuestion( 0.0)"
+        style="background-color: #919191;">Neutral/Unsure</button> <br>
+    <button class="button" onclick="nextQuestion(-0.5)"
+        style="background-color: #f44336;">Disagree</button> <br>
+    <button class="button" onclick="nextQuestion(-1.0)"
+        style="background-color: #b71c1c;">Strongly Disagree</button> <br>
+    <button class="small_button" onclick="prevQuestion()" id="back_button">Back</button>
+    <button class="small_button_off" id="back_button_off">Back</button>
+    <br>
+
+    <!-- JavaScript for the test itself -->
+    <script>
+    /* global questions */
+    let maxA, maxB, maxC, maxD, maxE, maxF, maxG, maxH
+    maxA = maxB = maxC = maxD = maxE = maxF = maxG = maxH = 0
+    let a, b, c, d, e, f, g, h
+    a = b = c = d = e = f = g = h = 0
+    let qn = [] 
+    let qi = 0
+    populateQn()
+    let answers = []
+
+    function initQuestion () {
+        const currentQuestion = questions[qn[qi]]
+        document.getElementById('question-text').innerHTML = currentQuestion.question
+        document.getElementById('question-number').innerHTML = `Question ${qi + 1} of ${questions.length}`
+        
+        if (qi === 0) {
+            document.getElementById('back_button').style.display = 'none'
+            document.getElementById('back_button_off').style.display = 'block'
+        }
+        else {
+            document.getElementById('back_button').style.display = 'block'
+            document.getElementById('back_button_off').style.display = 'none'
+        }
+    }
+
+    function nextQuestion (mult) {
+        const currentQuestion = questions[qn[qi]]
+        const effect = currentQuestion.effect
+        
+        answers[qi] = mult
+        
+        a += mult * effect.a
+        b += mult * effect.b
+        c += mult * effect.c
+        d += mult * effect.d
+        e += mult * effect.e
+        f += mult * effect.f
+        g += mult * effect.g
+        h += mult * effect.h
+        
+        qi++
+        
+        if (qi < questions.length) {
+            initQuestion()
+        }
+        else {
+            results()
+        }
+    }
+
+    function prevQuestion () {
+        if (qi === 0) {
+            return
+        }
+        
+        qi--
+        const currentQuestion = questions[qn[qi]]
+        const effect = currentQuestion.effect
+
+        const prevAnswer = answers[qi]
+        a -= prevAnswer * effect.a
+        b -= prevAnswer * effect.b
+        c -= prevAnswer * effect.c
+        d -= prevAnswer * effect.d
+        e -= prevAnswer * effect.e
+        f -= prevAnswer * effect.f
+        g -= prevAnswer * effect.g
+        h -= prevAnswer * effect.h
+        
+        answers[qi] = undefined
+        
+        initQuestion()
+    }
+
+    function calcScore (score, max) {
+        return (100 * (max + score) / (2 * max)).toFixed(1)
+    }
+
+    function populateQn() {
+        for (let i = 0; i < questions.length; i++) {
+            qn.push(i)
+        }
+    }
+
+    function results () {
+        window.location.href = 'results.html' +
+                        `?a=${calcScore(a, maxA)}` +
+                        `&b=${calcScore(b, maxB)}` +
+                        `&c=${calcScore(c, maxC)}` +
+                        `&d=${calcScore(d, maxD)}` +
+                        `&e=${calcScore(e, maxE)}` +
+                        `&f=${calcScore(f, maxF)}` +
+                        `&g=${calcScore(g, maxG)}` +
+                        `&h=${calcScore(h, maxH)}`
+    }
+
+    for (let i = 0; i < questions.length; i++) {
+        const effect = questions[i].effect
+        maxA += Math.abs(effect.a)
+        maxB += Math.abs(effect.b)
+        maxC += Math.abs(effect.c)
+        maxD += Math.abs(effect.d)
+        maxE += Math.abs(effect.e)
+        maxF += Math.abs(effect.f)
+        maxG += Math.abs(effect.g)
+        maxH += Math.abs(effect.h)
+    }
+
+    initQuestion()
+</script>
+</body>
+
+</html>
