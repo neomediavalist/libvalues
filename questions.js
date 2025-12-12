@@ -7,7 +7,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -17,7 +20,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -27,7 +33,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -37,7 +46,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -47,7 +59,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -57,7 +72,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -67,7 +85,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -77,7 +98,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -87,7 +111,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 5,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -97,7 +124,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -107,7 +137,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -117,7 +150,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     // Hierarchy - Heterarchy
@@ -128,7 +164,10 @@ questions = [
             "b": 10,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -138,7 +177,10 @@ questions = [
             "b": 5,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -148,7 +190,10 @@ questions = [
             "b": 10,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -158,7 +203,10 @@ questions = [
             "b": 5,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -168,7 +216,10 @@ questions = [
             "b": 10,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -178,7 +229,10 @@ questions = [
             "b": 5,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -188,7 +242,10 @@ questions = [
             "b": -10,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -198,7 +255,10 @@ questions = [
             "b": -5,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -208,7 +268,10 @@ questions = [
             "b": -10,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -218,7 +281,10 @@ questions = [
             "b": -5,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -228,7 +294,10 @@ questions = [
             "b": -5,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -238,7 +307,10 @@ questions = [
             "b": -10,
             "c": 0,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     // Planning - Markets
@@ -249,7 +321,10 @@ questions = [
             "b": 0,
             "c": 10,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -259,7 +334,10 @@ questions = [
             "b": 0,
             "c": 10,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -269,7 +347,10 @@ questions = [
             "b": 0,
             "c": 5,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -279,7 +360,10 @@ questions = [
             "b": 0,
             "c": 10,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -289,7 +373,10 @@ questions = [
             "b": 0,
             "c": 5,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -299,7 +386,10 @@ questions = [
             "b": 0,
             "c": 5,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -309,7 +399,10 @@ questions = [
             "b": 0,
             "c": -10,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -319,7 +412,10 @@ questions = [
             "b": 0,
             "c": -10,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -329,7 +425,10 @@ questions = [
             "b": 0,
             "c": -5,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -339,7 +438,10 @@ questions = [
             "b": 0,
             "c": -10,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -349,7 +451,10 @@ questions = [
             "b": 0,
             "c": -5,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -359,7 +464,10 @@ questions = [
             "b": 0,
             "c": -5,
             "d": 0,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     // Collectivism - Individualism
@@ -370,7 +478,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 5,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -380,7 +491,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 10,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -390,7 +504,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 10,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -400,7 +517,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 5,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -410,7 +530,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 5,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -420,7 +543,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 10,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -430,7 +556,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": -10,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -440,7 +569,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": -5,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -450,7 +582,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": -5,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -460,7 +595,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": -10,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -470,7 +608,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": -10,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -480,7 +621,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": -5,
-            "e": 0
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     // Horun - Verun
@@ -491,7 +635,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 0,
-            "e": 10
+            "e": 10,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -501,7 +648,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 0,
-            "e": 10
+            "e": 10,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -511,7 +661,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 0,
-            "e": 10
+            "e": 10,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -521,7 +674,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 0,
-            "e": -10
+            "e": -10,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -531,7 +687,10 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 0,
-            "e": -10
+            "e": -10,
+            "f": 0,
+            "g": 0,
+            "h": 0
         }
     },
     {
@@ -541,7 +700,481 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 0,
-            "e": -10
+            "e": -10,
+            "f": 0,
+            "g": 0,
+            "h": 0
+        }
+    },
+    // Nature - Technology
+    {
+    "question": "Modern technology often disconnects people from real human experience.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 5,
+            "g": 0,
+            "h": 0
+        }
+    },
+    {
+    "question": "Local food production is better than relying on technological mega-systems.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 5,
+            "g": 0,
+            "h": 0
+        }
+    },
+    {
+    "question": "A simpler lifestyle leads to fewer social and psychological issues.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 5,
+            "g": 0,
+            "h": 0
+        }
+    },
+    {
+    "question": "Communities should have the right to restrict certain technologies voluntarily.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 5,
+            "g": 0,
+            "h": 0
+        }
+    },
+    {
+    "question": "High-tech lifestyles weaken community bonds.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 5,
+            "g": 0,
+            "h": 0
+        }
+    },
+    {
+    "question": "Human wellbeing depends on maintaining a strong connection to nature.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 10,
+            "g": 0,
+            "h": 0
+        }
+    },
+    {
+    "question": "Technological innovation improves human life more than any other force.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": -5,
+            "g": 0,
+            "h": 0
+        }
+    },
+    {
+    "question": "Technology will solve most environmental problems more effectively than conservation alone.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": -5,
+            "g": 0,
+            "h": 0
+        }
+    },
+    {
+    "question": "Scientific advancement should be embraced, not feared.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": -5,
+            "g": 0,
+            "h": 0
+        }
+    },
+    {
+    "question": "High-tech solutions can replace outdated natural methods.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": -5,
+            "g": 0,
+            "h": 0
+        }
+    },
+    {
+    "question": "Technological development should be accelerated, not slowed down.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": -10,
+            "g": 0,
+            "h": 0
+        }
+    },
+    {
+    "question": "Technology enhances human freedom by giving individuals more choices.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": -5,
+            "g": 0,
+            "h": 0
+        }
+    },
+    // Conservative - Progressive
+    {
+    "question": "Moral standards rooted in tradition deserve respect.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 5,
+            "h": 0
+        }
+    },
+    {
+    "question": "People benefit from strong family structures and long-standing social expectations.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 5,
+            "h": 0
+        }
+    },
+    {
+    "question": "Tradition provides a stable framework for personal identity.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 10,
+            "h": 0
+        }
+    },
+    {
+    "question": "Cultural heritage should be preserved, not abandoned.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 5,
+            "h": 0
+        }
+    },
+    {
+    "question": "Established social norms are usually safer than untested alternatives.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 5,
+            "h": 0
+        }
+    },
+    {
+    "question": "Traditions can coexist with liberty.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 5,
+            "h": 0
+        }
+    },
+    {
+    "question": "Cultural progress is essential for a more open society.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": -5,
+            "h": 0
+        }
+    },
+    {
+    "question": "New ideas and identities should be welcomed and embraced.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": -5,
+            "h": 0
+        }
+    },
+    {
+    "question": "Social roles should be fluid, chosen by individuals, not inherited.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": -5,
+            "h": 0
+        }
+    },
+    {
+    "question": "Marginalized lifestyles deserve equal social acceptance.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": -10,
+            "h": 0
+        }
+    },
+    {
+    "question": "Cultural evolution is a natural part of human freedom.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": -5,
+            "h": 0
+        }
+    },
+    {
+    "question": "Personal identity is for individuals to define, not tradition.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": -5,
+            "h": 0
+        }
+    },
+    // Interventionism - Isolationism
+    {
+    "question": "Sometimes involvement abroad is necessary to prevent greater conflicts later.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 5
+        }
+    },
+    {
+    "question": "Defensive pacts with foreign partners improve overall security.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 5
+        }
+    },
+    {
+    "question": "Preventing hostile regimes from expanding is in everyone’s interest.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 5
+        }
+    },
+    {
+    "question": "Strategic pressure on hostile regimes can protect innocent people.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 5
+        }
+    },
+    {
+    "question": "Assisting friendly forces abroad can prevent larger conflicts from escalating.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 5
+        }
+    },
+    {
+    "question": "Showing strength abroad reinforces deterrence at home.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 5
+        }
+    },
+    {
+    "question": "Intervention abroad undermines sovereignty and self-determination.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": -5
+        }
+    },
+    {
+    "question": "Our society should avoid getting involved in foreign conflicts.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": -5
+        }
+    },
+    {
+    "question": "Alliances that drag us into wars should be avoided.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": -5
+        }
+    },
+    {
+    "question": "The best foreign policy is peaceful trade, not military presence.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": -5
+        }
+    },
+    {
+    "question": "Intervening abroad fuels resentment and instability.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": -5
+        }
+    },
+    {
+    "question": "We should not take sides in foreign power struggles.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": -10
         }
     }
 ];
