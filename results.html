@@ -14,7 +14,7 @@
 
 <body>
 
-    <h1>LibertarianValues 1.0<br>Results</h1>
+    <h1>LibertarianValues 2.0<br>Results</h1>
 
     <h2><span class="weight-300" id="a-label"></span></h2>
     <div class="axis">
@@ -70,6 +70,39 @@
             <div class="text-wrapper" id="verun"></div>
         </div>
         <img id="img-verun" src="value_images/verun.svg" height="128pt" />
+    </div>
+     <h2><span class="weight-300" id="f-label"></span></h2>
+    <div class="axis">
+        <img id="img-nature" src="value_images/nature.svg" height="128pt" />
+        <div class="bar nature" id="bar-nature">
+            <div class="text-wrapper" id="nature"></div>
+        </div>
+        <div class="bar technology" id="bar-technology">
+            <div class="text-wrapper" id="technology"></div>
+        </div>
+        <img id="img-technology" src="value_images/technology.svg" height="128pt" />
+    </div>
+    <h2><span class="weight-300" id="g-label"></span></h2>
+    <div class="axis">
+        <img id="img-conservative" src="value_images/conservative.svg" height="128pt" />
+        <div class="bar conservative" id="bar-conservative">
+            <div class="text-wrapper" id="conservative"></div>
+        </div>
+        <div class="bar progressive" id="bar-progressive">
+            <div class="text-wrapper" id="progressive"></div>
+        </div>
+        <img id="img-progressive" src="value_images/progressive.svg" height="128pt" />
+    </div>
+    <h2><span class="weight-300" id="h-label"></span></h2>
+    <div class="axis">
+        <img id="img-interventionism" src="value_images/interventionism.svg" height="128pt" />
+        <div class="bar interventionism" id="bar-interventionism">
+            <div class="text-wrapper" id="interventionism"></div>
+        </div>
+        <div class="bar isolationism" id="bar-isolationism">
+            <div class="text-wrapper" id="isolationism"></div>
+        </div>
+        <img id="img-isolationism" src="value_images/isolationism.svg" height="128pt" />
     </div>
     <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
     <h3><span class="weight-300" id="ideodesc-label"></span></h3>
@@ -151,6 +184,9 @@
         const planning = parseFloat(getQueryVariable('c')) || 0
         const collectivism = parseFloat(getQueryVariable('d')) || 0
         const horun = parseFloat(getQueryVariable('e')) || 0
+        const nature = parseFloat(getQueryVariable('f')) || 0
+        const conservative = parseFloat(getQueryVariable('g')) || 0
+        const interventionism = parseFloat(getQueryVariable('h')) || 0
 
         const ideologyTexts = {
             'Hoppeanism': {
@@ -171,7 +207,7 @@
             },
             'Anarcho-Capitalism': {
                 name: 'Anarcho-Capitalism',
-                desc: 'Anarcho-Capitalism advocates a stateless society based on voluntary exchange, private property, and free markets, but also supports direct democracy and opposes hierarchical structures. It seeks decentralized, horizontal decision-making while preserving individual economic freedom.'
+                desc: 'Walter Block’s anarcho-capitalism advocates absolute private property rights, full market freedom, and complete abolition of the state. His variation allows for controversial voluntarist positions grounded in strict non-aggression principles, arguing that all interactions—including highly disputed ones—should be consensual and market-based.'
             },
             'Avaritionism': {
                 name: 'Avaritionism',
@@ -220,6 +256,74 @@
             'Platformism': {
                 name: 'Platformism',
                 desc: 'Platformism is an anarchist ideology advocating tightly organized groups united by shared principles. It emphasizes tactical and theoretical unity, collective responsibility, and federalism, aiming to influence working-class movements while rejecting internal disagreement and vanguard models.'
+            },
+            'ClassLib': {
+                name: 'Classical liberalism',
+                desc: 'Classical liberalism emphasizes individual liberty, private property, free markets, limited government, and the rule of law. It argues that society prospers when state power is restrained, civil rights are protected, and people freely pursue their own economic and personal interests.'
+            },
+            'NeoClassLib': {
+                name: 'Neoclassical liberalism',
+                desc: 'Neoclassical liberalism updates classical liberalism by accepting a limited regulatory state while prioritizing free markets and competition. It supports individual rights, economic openness, and modest government intervention aimed at ensuring fairness, stability, and the conditions necessary for market efficiency.'
+            },
+            'Neolibertarianism': {
+                name: 'Neolibertarianism',
+                desc: 'Neolibertarianism blends libertarian principles with pragmatic acceptance of limited government activism. It endorses free markets and personal liberty but supports targeted state action, particularly in security and foreign policy, believing that proactive engagement can safeguard freedom and promote global stability.'
+            },
+            'Fusionism': {
+                name: 'Fusionism',
+                desc: 'Fusionism merges libertarian economics with traditional conservative social values. It argues that free markets and limited government best preserve virtue, community, and individual responsibility, uniting right-leaning libertarians and conservatives around a shared belief in order, liberty, and moral tradition.'
+            },
+            'Neoliberalism': {
+                name: 'Neoliberalism',
+                desc: 'Neoliberalism supports market-oriented reforms such as privatization, deregulation, free trade, and reduced state intervention. It emphasizes economic efficiency, global integration, competition, and strengthening market mechanisms, believing these policies promote growth, innovation, and individual opportunity within modern economies.'
+            },
+            'Paleoconservatism': {
+                name: 'Paleoconservatism',
+                desc: 'Paleoconservatism stresses tradition, limited government, cultural continuity, and non-interventionist foreign policy. It criticizes globalization, mass immigration, and expansive federal power, promoting localism, heritage, and social cohesion while rejecting technocratic or overly ideological approaches to politics and society.'
+            },
+            'Ordoliberalism': {
+                name: 'Ordoliberalism',
+                desc: 'Ordoliberalism is a German liberal tradition advocating strong but limited government that ensures competitive markets. The state sets rules to prevent monopolies, maintain stability, and protect economic order, balancing free enterprise with regulation designed to preserve fair competition.'
+            },
+            'Agorism': {
+                name: 'Agorism',
+                desc: 'Agorism is a libertarian strategy promoting counter-economics voluntary, non-state markets operating outside government control. It aims to make the state obsolete through peaceful black- and grey-market activity, fostering a society built on free exchange, self-reliance, and anti-authoritarian principles.'
+            },
+            'Alt-Right': {
+                name: 'Alt-Right',
+                desc: 'The Alt-Right is a far-right, anti-establishment movement characterized by ethnonationalism, rejection of mainstream conservatism, and opposition to multiculturalism. It promotes internet-based activism, cultural identity narratives, and critiques of liberal democracy.'
+            },
+            'LeftRoth': {
+                name: 'Left Rothbardianism',
+                desc: 'Left Rothbardianism blends Murray Rothbard’s anarcho-capitalism with left-libertarian concerns about corporate power and social justice. It supports stateless markets, strong property rights, anti-militarism, and opposition to state-backed privilege, emphasizing decentralization and voluntary arrangements that reduce economic hierarchy.'
+            },
+            'Geolibertarianism': {
+                name: 'Geolibertarianism',
+                desc: 'Geolibertarianism combines libertarian principles with Henry George’s belief that land value belongs to everyone. It supports minimal government funded by land value taxation, free markets, and strong personal rights while distinguishing between private improvements and commonly owned natural resources.'
+            },
+            'Green-Libertarianism': {
+                name: 'Green Libertarianism',
+                desc: 'Green Libertarianism merges ecological concern with libertarian values. It supports decentralized environmental solutions, market-based ecological stewardship, property-rights-driven conservation, and minimal state intervention, arguing that sustainability and personal freedom can coexist through voluntary action and local community initiatives.'
+            },
+            'Anarcho-Primitivism': {
+                name: 'Anarcho-Primitivism',
+                desc: 'Anarcho-Primitivism critiques industrial society and advocates a return to simpler, pre-civilized forms of living. It argues that modern technology, hierarchy, and mass systems alienate humans from nature, promoting small-scale, decentralized, and ecologically harmonious ways of life.'
+            },
+            'Guild-Socialism': {
+                name: 'Guild Socialism',
+                desc: 'Guild Socialism proposes worker-controlled industries organized into democratic guilds, cooperating through a decentralized socialist structure. It stresses workplace self-management, local autonomy, and balancing economic coordination with social freedom, offering a middle ground between state socialism and market capitalism'
+            },
+            'Green-Anarchism': {
+                name: 'Green Anarchism',
+                desc: 'Green Anarchism combines anarchism with radical environmentalism, rejecting industrialism and hierarchical institutions that harm ecosystems. It promotes decentralized communities, ecological living, mutual aid, and direct action, aiming to build sustainable societies free of domination and environmental exploitation.'
+            },
+            'Anarcho-Egoism': {
+                name: 'Anarcho-Egoism',
+                desc: 'Anarcho-Egoism, derived from Max Stirner, promotes radical individual autonomy and rejection of all imposed authority. It views social structures as voluntary associations formed for personal benefit, emphasizing self-interest, self-ownership, and freedom from moral, political, or societal obligations.'
+            },
+            'Religious-Anarchism': {
+                name: 'Religious Anarchism',
+                desc: 'Religious Anarchism fuses spiritual or faith-based ethics with anarchist rejection of coercive authority. It promotes voluntary community, compassion, and moral autonomy while opposing the state, arguing that genuine spiritual practice favors decentralized, cooperative, and non-hierarchical social arrangements.'
             }
         }
 
@@ -228,13 +332,19 @@
         document.getElementById('b-label').innerHTML = setLabel(hierarchy, 
             "Extremely Hierarchical,Very Hierarchical,Hierarchical,Neutral,Heterarchical,Very Heterarchical,Extremely Heterarchical")
         document.getElementById('c-label').innerHTML = setLabel(planning, 
-            "Extremely Communist,Very Communist,Communist,Neutral,Capitalist,Very Capitalist,Extremely Capitalist")
+            "Extremely Planning-Oriented,Very Planning-Oriented,Planning-Oriented,Neutral,Market-Oriented,Very Market-Oriented,Extremely Market-Oriented")
         document.getElementById('d-label').innerHTML = setLabel(collectivism, 
             "Extremely Collectivist,Very Collectivist,Collectivist,Neutral,Individualist,Very Individualist,Extremely Individualist")
         document.getElementById('e-label').innerHTML = setLabel(horun, 
             "Extremely Libertarian Unionist,Very Libertarian Unionist,Libertarian Unionist,Neutral,Vertical Unionist,Very Vertical Unionist,Extremely Vertical Unionist")
+        document.getElementById('f-label').innerHTML = setLabel(nature, 
+            "Extremely Eco-Focused,Very Eco-Focused,Eco-Focused,Neutral,Tech-Oriented,Very Tech-Oriented,Extremely Tech-Oriented")
+        document.getElementById('g-label').innerHTML = setLabel(conservative, 
+            "Extremely Conservative,Very Conservative,Conservative,Neutral,Progressive,Very Progressive,Extremely Progressive")
+        document.getElementById('h-label').innerHTML = setLabel(interventionism, 
+            "Extremely Interventionist,Very Interventionist,Interventionist,Neutral,Isolationist,Very Isolationist,Extremely Isolationist")
 
-        console.log('Values:', authority, hierarchy, planning, collectivism, horun)
+        console.log('Values:', authority, hierarchy, planning, collectivism, horun, nature, conservative, interventionism)
         console.log('Ideologies object:', ideologies)
         console.log('Ideology texts:', ideologyTexts)
         const anarchy = (100 - authority).toFixed(1)
@@ -242,6 +352,9 @@
         const markets = (100 - planning).toFixed(1)
         const individualism = (100 - collectivism).toFixed(1)
         const verun = (100 - horun).toFixed(1)
+        const technology = (100 - nature).toFixed(1)
+        const progressive = (100 - conservative).toFixed(1)
+        const isolationism = (100 - interventionism).toFixed(1)
 
         setBarValue('authority', authority)
         setBarValue('anarchy', anarchy)
@@ -253,6 +366,13 @@
         setBarValue('collectivism', collectivism)
         setBarValue('horun', horun)
         setBarValue('verun', verun)
+        setBarValue('nature', nature)
+        setBarValue('technology', technology)
+        setBarValue('conservative', conservative)
+        setBarValue('progressive', progressive)
+        setBarValue('interventionism', interventionism)
+        setBarValue('isolationism', isolationism)
+
 
         let ideology = ''
         let ideodesc = ''
@@ -267,7 +387,9 @@
             dist += Math.pow(Math.abs(ideologies[name].b - hierarchy), 2)
             dist += Math.pow(Math.abs(ideologies[name].d - collectivism), 2)
             dist += Math.pow(Math.abs(ideologies[name].e - horun), 2)
-
+            dist += Math.pow(Math.abs(ideologies[name].f - nature), 2)
+            dist += Math.pow(Math.abs(ideologies[name].g - conservative), 2)
+            dist += Math.pow(Math.abs(ideologies[name].h - interventionism), 2)
             // ideologyToDistance[name] = dist
             ideologyIndexAndDistance.push({
             distance: dist,
@@ -346,9 +468,9 @@
             var c = document.createElement("canvas")
             var ctx = c.getContext("2d")
             c.width = 820;
-            c.height = 1000;
+            c.height = 1360;
             ctx.fillStyle = "#EEEEEE"
-            ctx.fillRect(0,0,820,1000);
+            ctx.fillRect(0,0,820,1360);
 
             function loadImage(src) {
                 return new Promise((resolve, reject) => {
@@ -369,7 +491,13 @@
                 loadImage('value_images/collectivism.svg'),
                 loadImage('value_images/individualism.svg'),
                 loadImage('value_images/horun.svg'),
-                loadImage('value_images/verun.svg')
+                loadImage('value_images/verun.svg'),
+                loadImage('value_images/nature.svg'),
+                loadImage('value_images/technology.svg'),
+                loadImage('value_images/conservative.svg'),
+                loadImage('value_images/progressive.svg'),
+                loadImage('value_images/interventionism.svg'),
+                loadImage('value_images/isolationism.svg')
             ]).then(images => {
                 ctx.drawImage(images[0], 20, 170, 100, 100);  // authority
                 ctx.drawImage(images[1], 680, 170, 100, 100); // anarchy
@@ -381,6 +509,12 @@
                 ctx.drawImage(images[7], 680, 530, 100, 100); // individualism
                 ctx.drawImage(images[8], 20, 650, 100, 100);  // horun
                 ctx.drawImage(images[9], 680, 650, 100, 100); // verun
+                ctx.drawImage(images[10], 20, 770, 100, 100); // nature
+                ctx.drawImage(images[11], 680, 770, 100, 100); // technology
+                ctx.drawImage(images[12], 20, 890, 100, 100); // conservative
+                ctx.drawImage(images[13], 680, 890, 100, 100); // progressive
+                ctx.drawImage(images[14], 20, 1010, 100, 100); // interventionism
+                ctx.drawImage(images[15], 680, 1010, 100, 100); // isolationism
 
             ctx.fillStyle = '#222222'
             ctx.fillRect(120, 180, 560, 80)
@@ -388,6 +522,9 @@
             ctx.fillRect(120, 420, 560, 80)
             ctx.fillRect(120, 540, 560, 80)
             ctx.fillRect(120, 660, 560, 80)
+            ctx.fillRect(120, 780, 560, 80)
+            ctx.fillRect(120, 900, 560, 80)
+            ctx.fillRect(120, 1020, 560, 80)
             ctx.fillStyle = '#cecece'
             ctx.fillRect(120, 184, 5.6 * authority - 2, 72)
             ctx.fillStyle = '#111111'
@@ -408,10 +545,22 @@
             ctx.fillRect(120, 664, 5.6 * horun - 2, 72)
             ctx.fillStyle = 'rgb(142, 102, 161)'
             ctx.fillRect(682 - 5.6 * verun, 664, 5.6 * verun - 2, 72)
+            ctx.fillStyle = '#4d8825ff'
+            ctx.fillRect(120, 784, 5.6 * nature - 2, 72)
+            ctx.fillStyle = '#c939acff'
+            ctx.fillRect(682 - 5.6 * technology, 784, 5.6 * technology - 2, 72)
+            ctx.fillStyle = '#182152ff'
+            ctx.fillRect(120, 904, 5.6 * conservative - 2, 72)
+            ctx.fillStyle = '#4c6b28ff'
+            ctx.fillRect(682 - 5.6 * progressive, 904, 5.6 * progressive - 2, 72)
+            ctx.fillStyle = '#6d878eff'
+            ctx.fillRect(120, 1024, 5.6 * interventionism - 2, 72)
+            ctx.fillStyle = '#8d819fff'
+            ctx.fillRect(682 - 5.6 * isolationism, 1024, 5.6 * isolationism - 2, 72)
             ctx.fillStyle = '#222222'
             ctx.font = '700 70px Montserrat'
             ctx.textAlign = 'left'
-            ctx.fillText('LibertarianValues 1.0', 20, 90)
+            ctx.fillText('LibertarianValues 2.0', 20, 90)
             ctx.font = '50px Montserrat'
             ctx.fillText(ideologyTexts[closestMatch.name].name, 20, 140)
 
@@ -422,27 +571,36 @@
             if (planning > 30) {ctx.fillText(planning + '%', 130, 477.5)}
             if (collectivism > 30) {ctx.fillText(collectivism + '%', 130, 597.5)}
             if (horun > 30) {ctx.fillText(horun + '%', 130, 717.5)}
+            if (nature > 30) {ctx.fillText(nature + '%', 130, 837.5)}
+            if (conservative > 30) {ctx.fillText(conservative + '%', 130, 957.5)}
+            if (interventionism > 30) {ctx.fillText(interventionism + '%', 130, 1077.5)}
             ctx.textAlign = 'right'
             if (anarchy > 30) {ctx.fillText(anarchy + '%', 670, 237.5)}
             if (heterarchy > 30) {ctx.fillText(heterarchy + '%', 670, 357.5)}
             if (markets > 30) {ctx.fillText(markets + '%', 670, 477.5)}
             if (individualism > 30) {ctx.fillText(individualism + '%', 670, 597.5)}
             if (verun > 30) {ctx.fillText(verun + '%', 670, 717.5)}
+            if (technology > 30) {ctx.fillText(technology + '%', 670, 837.5)}
+            if (progressive > 30) {ctx.fillText(progressive + '%', 670, 957.5)}
+            if (isolationism > 30) {ctx.fillText(isolationism + '%', 670, 1077.5)}
 
             ctx.fillStyle = '#222222'
             ctx.font = '700 20px Montserrat'
             ctx.textAlign = 'left';
-            wrapText(ctx, ideologyTexts[closestMatch.name].desc, 20, 800, 790, 25);
+            wrapText(ctx, ideologyTexts[closestMatch.name].desc, 20, 1150, 790, 25);
             ctx.fillStyle = '#222222'
             ctx.font = '300 30px Montserrat'
             ctx.textAlign = 'right';
-            ctx.fillText('neomediavalist.github.io/libvalues/', 780, 980)
+            ctx.fillText('neomediavalist.github.io/libvalues/', 780, 1335)
             ctx.textAlign = 'center'
             ctx.fillText('' + document.getElementById('a-label').innerHTML, 400, 175)
             ctx.fillText('' + document.getElementById('b-label').innerHTML, 400, 295)
             ctx.fillText('' + document.getElementById('c-label').innerHTML, 400, 415)
             ctx.fillText('' + document.getElementById('d-label').innerHTML, 400, 535)
             ctx.fillText('' + document.getElementById('e-label').innerHTML, 400, 655)
+            ctx.fillText('' + document.getElementById('f-label').innerHTML, 400, 775)
+            ctx.fillText('' + document.getElementById('g-label').innerHTML, 400, 895)
+            ctx.fillText('' + document.getElementById('h-label').innerHTML, 400, 1015)
 
             document.getElementById("banner-image").src = c.toDataURL();
             c.style.display = 'block';
