@@ -255,6 +255,41 @@ div.verun {
     text-align: right;
     border-left-style: solid;
 }
+div.nature {
+    background-color: #4d8825ff;
+    text-align: left;
+    border-left-style: solid;
+}
+
+div.technology {
+    background-color: #c939acff;
+    text-align: right;
+    border-right-style: solid;
+}
+
+div.conservative {
+    background-color: #182152ff;
+    text-align: left;
+    border-left-style: solid;
+}
+
+div.progressive {
+    background-color: #4c6b28ff;
+    text-align: right;
+    border-right-style: solid;
+}
+
+div.interventionism {
+    background-color: #6d878eff;
+    text-align: left;
+    border-right-style: solid;
+}
+
+div.isolationism {
+    background-color: #8d819fff;
+    text-align: right;
+    border-left-style: solid;
+}
 
 span.weight-300 {
     font-weight: 300;
