@@ -291,6 +291,18 @@ div.isolationism {
     border-left-style: solid;
 }
 
+div.propertarianism {
+    background-color: rgb(175, 175, 175);
+    text-align: left;
+    border-right-style: solid;
+}
+
+div.georgism {
+    background-color: #427328ff;
+    text-align: right;
+    border-left-style: solid;
+}
+
 span.weight-300 {
     font-weight: 300;
 }
