@@ -32,10 +32,10 @@
     <!-- JavaScript for the test itself -->
     <script>
     /* global questions */
-    let maxA, maxB, maxC, maxD, maxE, maxF, maxG, maxH
-    maxA = maxB = maxC = maxD = maxE = maxF = maxG = maxH = 0
-    let a, b, c, d, e, f, g, h
-    a = b = c = d = e = f = g = h = 0
+    let maxA, maxB, maxC, maxD, maxE, maxF, maxG, maxH, maxI
+    maxA = maxB = maxC = maxD = maxE = maxF = maxG = maxH = maxI = 0
+    let a, b, c, d, e, f, g, h, i
+    a = b = c = d = e = f = g = h = i = 0
     let qn = [] 
     let qi = 0
     populateQn()
@@ -70,6 +70,7 @@
         f += mult * effect.f
         g += mult * effect.g
         h += mult * effect.h
+        i += mult * effect.i
         
         qi++
         
@@ -99,6 +100,7 @@
         f -= prevAnswer * effect.f
         g -= prevAnswer * effect.g
         h -= prevAnswer * effect.h
+        i -= prevAnswer * effect.i
         
         answers[qi] = undefined
         
@@ -124,7 +126,8 @@
                         `&e=${calcScore(e, maxE)}` +
                         `&f=${calcScore(f, maxF)}` +
                         `&g=${calcScore(g, maxG)}` +
-                        `&h=${calcScore(h, maxH)}`
+                        `&h=${calcScore(h, maxH)}` +
+                        `&i=${calcScore(i, maxI)}`
     }
 
     for (let i = 0; i < questions.length; i++) {
@@ -137,6 +140,7 @@
         maxF += Math.abs(effect.f)
         maxG += Math.abs(effect.g)
         maxH += Math.abs(effect.h)
+        maxI += Math.abs(effect.i)
     }
 
     initQuestion()
