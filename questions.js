@@ -10,7 +10,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -23,7 +24,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -36,7 +38,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -49,7 +52,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -62,7 +66,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -75,7 +80,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -88,7 +94,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -101,7 +108,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -114,7 +122,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -127,7 +136,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -140,7 +150,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -153,7 +164,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     // Hierarchy - Heterarchy
@@ -167,7 +179,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -180,7 +193,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -193,7 +207,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -206,7 +221,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -219,7 +235,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -232,7 +249,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -245,7 +263,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -258,7 +277,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -271,7 +291,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -284,7 +305,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -297,7 +319,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -310,7 +333,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     // Planning - Markets
@@ -324,7 +348,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -337,7 +362,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -350,7 +376,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -363,7 +390,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -376,7 +404,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -389,7 +418,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -402,7 +432,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -415,7 +446,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -428,7 +460,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -441,7 +474,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -454,7 +488,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -467,7 +502,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     // Collectivism - Individualism
@@ -481,7 +517,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -494,7 +531,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -507,7 +545,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -520,7 +559,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -533,7 +573,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -546,7 +587,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -559,7 +601,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -572,7 +615,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -585,7 +629,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -598,7 +643,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -611,7 +657,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -624,7 +671,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     // Horun - Verun
@@ -638,7 +686,8 @@ questions = [
             "e": 10,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -651,7 +700,8 @@ questions = [
             "e": 10,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -664,7 +714,8 @@ questions = [
             "e": 10,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -677,7 +728,8 @@ questions = [
             "e": -10,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -690,7 +742,8 @@ questions = [
             "e": -10,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -703,7 +756,8 @@ questions = [
             "e": -10,
             "f": 0,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     // Nature - Technology
@@ -717,7 +771,8 @@ questions = [
             "e": 0,
             "f": 5,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -730,7 +785,8 @@ questions = [
             "e": 0,
             "f": 5,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -743,7 +799,8 @@ questions = [
             "e": 0,
             "f": 5,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -756,7 +813,8 @@ questions = [
             "e": 0,
             "f": 5,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -769,7 +827,8 @@ questions = [
             "e": 0,
             "f": 5,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -782,7 +841,8 @@ questions = [
             "e": 0,
             "f": 10,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -795,7 +855,8 @@ questions = [
             "e": 0,
             "f": -5,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -808,7 +869,8 @@ questions = [
             "e": 0,
             "f": -5,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -821,7 +883,8 @@ questions = [
             "e": 0,
             "f": -5,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -834,7 +897,8 @@ questions = [
             "e": 0,
             "f": -5,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -847,7 +911,8 @@ questions = [
             "e": 0,
             "f": -10,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -860,7 +925,8 @@ questions = [
             "e": 0,
             "f": -5,
             "g": 0,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     // Conservative - Progressive
@@ -874,7 +940,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 5,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -887,7 +954,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 5,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -900,7 +968,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 10,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -913,7 +982,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 5,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -926,7 +996,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 5,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -939,7 +1010,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 5,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -952,7 +1024,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": -5,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -965,7 +1038,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": -5,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -978,7 +1052,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": -5,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -991,7 +1066,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": -10,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -1004,7 +1080,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": -5,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     {
@@ -1017,7 +1094,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": -5,
-            "h": 0
+            "h": 0,
+            "i": 0
         }
     },
     // Interventionism - Isolationism
@@ -1031,7 +1109,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 5
+            "h": 5,
+            "i": 0
         }
     },
     {
@@ -1044,7 +1123,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 5
+            "h": 5,
+            "i": 0
         }
     },
     {
@@ -1057,7 +1137,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 5
+            "h": 5,
+            "i": 0
         }
     },
     {
@@ -1070,7 +1151,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 5
+            "h": 5,
+            "i": 0
         }
     },
     {
@@ -1083,7 +1165,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 5
+            "h": 5,
+            "i": 0
         }
     },
     {
@@ -1096,7 +1179,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": 5
+            "h": 5,
+            "i": 0
         }
     },
     {
@@ -1109,7 +1193,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": -5
+            "h": -5,
+            "i": 0
         }
     },
     {
@@ -1122,7 +1207,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": -5
+            "h": -5,
+            "i": 0
         }
     },
     {
@@ -1135,7 +1221,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": -5
+            "h": -5,
+            "i": 0
         }
     },
     {
@@ -1148,7 +1235,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": -5
+            "h": -5,
+            "i": 0
         }
     },
     {
@@ -1161,7 +1249,8 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": -5
+            "h": -5,
+            "i": 0
         }
     },
     {
@@ -1174,7 +1263,177 @@ questions = [
             "e": 0,
             "f": 0,
             "g": 0,
-            "h": -10
+            "h": -10,
+            "i": 0
+        }
+    },
+    // Propertarianism - Georgism
+    {
+    "question": "All legitimate rights ultimately derive from private property ownership.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0,
+            "i": 5
+        }
+    },
+    {
+    "question": "The state should not redistribute wealth under any circumstances.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0,
+            "i": 5
+        }
+    },
+    {
+    "question": "Public ownership of land or resources is inherently illegitimate.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0,
+            "i": 5
+        }
+    },
+    {
+    "question": "Land should be treated no differently from any other form of private property.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0,
+            "i": 10
+        }
+    },
+    {
+    "question": "The idea that land belongs to everyone is a fiction used to justify taxation.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0,
+            "i": 5
+        }
+    },
+    {
+    "question": "Land speculation is a valid market activity, not a social harm.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0,
+            "i": 10
+        }
+    },
+    {
+    "question": "Individuals should own the value they create, but not the value of land itself.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0,
+            "i": -5
+        }
+    },
+    {
+    "question": "Land is a common inheritance and should not be privately monopolized.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0,
+            "i": -10
+        }
+    },
+    {
+    "question": "A tax on unimproved land value is the fairest form of taxation.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0,
+            "i": -5
+        }
+    },
+    {
+    "question": "Taxes on labor and productive capital are unjust compared to land value taxes",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0,
+            "i": -5
+        }
+    },
+    {
+    "question": "Housing affordability problems are primarily caused by land speculation.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0,
+            "i": -5
+        }
+    },
+    {
+    "question": "Natural resources should not generate private profit without public compensation.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0,
+            "h": 0,
+            "i": -5
         }
     }
 ];
