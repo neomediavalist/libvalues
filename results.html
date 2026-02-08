@@ -14,7 +14,7 @@
 
 <body>
 
-    <h1>LibertarianValues 2.0<br>Results</h1>
+    <h1>LibertarianValues 3.0<br>Results</h1>
 
     <h2><span class="weight-300" id="a-label"></span></h2>
     <div class="axis">
@@ -104,6 +104,17 @@
         </div>
         <img id="img-isolationism" src="value_images/isolationism.svg" height="128pt" />
     </div>
+    <h2><span class="weight-300" id="i-label"></span></h2>
+     <div class="axis">
+        <img id="img-propertarianism" src="value_images/propertarianism.svg" height="128pt" />
+        <div class="bar propertarianism" id="bar-propertarianism">
+            <div class="text-wrapper" id="propertarianism"></div>
+        </div>
+        <div class="bar georgism" id="bar-georgism">
+            <div class="text-wrapper" id="georgism"></div>
+        </div>
+        <img id="img-georgism" src="value_images/georgism.svg" height="128pt" />
+    </div>
     <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
     <h3><span class="weight-300" id="ideodesc-label"></span></h3>
     <p><br>You can download the image with the results below.</p>
@@ -120,7 +131,7 @@
     <dl id="next-matches"></dl>
 
     <img id="banner-image" src="" alt="LibertarianValues Results" style="max-width: 100%; height: auto; display: block; margin: 0 auto; border: 3px solid #222; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-    <canvas id="banner" width=820 height=1360 style="font-family:Montserrat; display:none;"></canvas>
+    <canvas id="banner" width=820 height=1480 style="font-family:Montserrat; display:none;"></canvas>
     <button class="button" onclick="location.href='index.html';"
         style="background-color: #2196f3; margin-top: 20px;">Back</button> <br>
     <!-- JavaScript for the test itself -->
@@ -187,23 +198,16 @@
         const nature = parseFloat(getQueryVariable('f')) || 0
         const conservative = parseFloat(getQueryVariable('g')) || 0
         const interventionism = parseFloat(getQueryVariable('h')) || 0
+        const propertarianism = parseFloat(getQueryVariable('i')) || 0
 
         const ideologyTexts = {
+            // libright
+
+            // Anarchists
+
             'Hoppeanism': {
                 name: 'Hoppeanism',
                 desc: 'Hoppeanism is a libertarian philosophy based on the ideas of Hans-Hermann Hoppe. It emphasizes private property, voluntary exchange, and strict opposition to state authority. It advocates a society organized around free markets, contract-based communities, and radical decentralization.'
-            },
-            'Libertarian-Monarchism': {
-                name: 'Libertarian Monarchism',
-                desc: 'Libertarian Monarchism is a minarchist ideology advocating a constitutional monarchy to protect individual liberty and limit government power. Economically right and civically libertarian, it supports monarchs as neutral arbiters, combining free markets with constrained, decentralized governance.'
-            },
-            'Minarchism': {
-                name: 'Minarchism',
-                desc: 'Minarchism is a libertarian philosophy advocating a minimal state whose sole role is to protect individual rights, typically through police, courts, and military. It opposes extensive government intervention, emphasizing voluntary exchange, private property, and personal freedom as the foundation of society.'
-            },
-            'Paleolibertarianism': {
-                name: 'Paleolibertarianism',
-                desc: 'Paleolibertarianism is a right-libertarian ideology combining strict free-market principles with traditional conservative cultural values. It emphasizes limited government, property rights, and non-interventionism, while promoting social norms like family, religion, and community as foundations for a stable, voluntary society.'
             },
             'Anarcho-Capitalism': {
                 name: 'Anarcho-Capitalism',
@@ -213,21 +217,107 @@
                 name: 'Avaritionism',
                 desc: 'Avaritionism is an extreme right-libertarian ideology combining Anarcho-Egoism and Social Darwinism. It prioritizes individual desire above all, rejects altruism, and celebrates competition and self-interest, viewing the strong as justified in dominating or exploiting the weak to maximize personal gain.'
             },
-            'Bleeding-Heart': {
-                name: 'Bleeding Heart Libertarianism',
-                desc: 'Bleeding Heart Libertarianism is a left-leaning libertarian ideology that combines strong support for individual liberty and free markets with concern for social justice and reducing poverty. It emphasizes voluntary cooperation, minimal state intervention, and policies that improve well-being for the disadvantaged.'
-            },
             'NRx': {
                 name: 'NRx',
                 desc: 'Neoreaction emphasizes formal, corporate-style governance with strong executive authority. It advocates replacing democratic states with city-state-like sovereign entities (“patches”), run efficiently like businesses, prioritizing order, stability, and rule of law over egalitarianism.'
+            },
+            'Agorism': {
+                name: 'Agorism',
+                desc: 'Agorism is a libertarian strategy promoting counter-economics voluntary, non-state markets operating outside government control. It aims to make the state obsolete through peaceful black- and grey-market activity, fostering a society built on free exchange, self-reliance, and anti-authoritarian principles.'
+            },
+
+            // Minarchists
+
+            'Minarchism': {
+                name: 'Minarchism',
+                desc: 'Minarchism is a libertarian philosophy advocating a minimal state whose sole role is to protect individual rights, typically through police, courts, and military. It opposes extensive government intervention, emphasizing voluntary exchange, private property, and personal freedom as the foundation of society.'
+            },
+            'Libertarian-Monarchism': {
+                name: 'Libertarian Monarchism',
+                desc: 'Libertarian Monarchism is a minarchist ideology advocating a constitutional monarchy to protect individual liberty and limit government power. Economically right and civically libertarian, it supports monarchs as neutral arbiters, combining free markets with constrained, decentralized governance.'
+            },
+            'Paleolibertarianism': {
+                name: 'Paleolibertarianism',
+                desc: 'Paleolibertarianism is a right-libertarian ideology combining strict free-market principles with traditional conservative cultural values. It emphasizes limited government, property rights, and non-interventionism, while promoting social norms like family, religion, and community as foundations for a stable, voluntary society.'
+            },
+            'Bleeding-Heart': {
+                name: 'Bleeding Heart Libertarianism',
+                desc: 'Bleeding Heart Libertarianism is a left-leaning libertarian ideology that combines strong support for individual liberty and free markets with concern for social justice and reducing poverty. It emphasizes voluntary cooperation, minimal state intervention, and policies that improve well-being for the disadvantaged.'
             },
             'Hayekism': {
                 name: 'Hayekism',
                 desc: 'Hayekism is an economic and political philosophy based on Friedrich Hayek’s ideas. It emphasizes free markets, limited government, spontaneous order, and the dangers of central planning, arguing that decentralized decision-making best preserves individual freedom and economic efficiency.'
             },
+            'Fusionism': {
+                name: 'Fusionism',
+                desc: 'Fusionism merges libertarian economics with traditional conservative social values. It argues that free markets and limited government best preserve virtue, community, and individual responsibility, uniting right-leaning libertarians and conservatives around a shared belief in order, liberty, and moral tradition.'
+            },
+            'Geolibertarianism': {
+                name: 'Geolibertarianism',
+                desc: 'Geolibertarianism combines libertarian principles with Henry George’s belief that land value belongs to everyone. It supports minimal government funded by land value taxation, free markets, and strong personal rights while distinguishing between private improvements and commonly owned natural resources.'
+            },
+            'Neolibertarianism': {
+                name: 'Neolibertarianism',
+                desc: 'Neolibertarianism blends libertarian principles with pragmatic acceptance of limited government activism. It endorses free markets and personal liberty but supports targeted state action, particularly in security and foreign policy, believing that proactive engagement can safeguard freedom and promote global stability.'
+            },
+            'Geoneolibertarianism': {
+                name: 'Geoneolibertarianism',
+                desc: 'Geoneolibertarianism merges Georgist land-value ideas with neolibertarian pragmatism. It emphasizes individual liberty, free markets, minimal domestic government funded primarily through land-value taxation, and treats natural resources as a shared commons, while endorsing proactive military intervention and global engagement to safeguard freedom and economic stability.'
+            },
+
+            // Liberals
+
+            'ClassLib': {
+                name: 'Classical liberalism',
+                desc: 'Classical liberalism emphasizes individual liberty, private property, free markets, limited government, and the rule of law. It argues that society prospers when state power is restrained, civil rights are protected, and people freely pursue their own economic and personal interests.'
+            },
+            'GeoclassLib': {
+                name: 'Geoclassical liberalism',
+                desc: 'Geoclassical liberalism merges classical liberalism with Georgist land principles. It upholds individual liberty, free markets, and limited government, funding public goods through land-value taxation while treating natural resources as a shared commons and private improvements as individually owned.'
+            },
+            'ManchesterLib': {
+                name: 'Manchester liberalism',
+                desc: 'Manchester liberalism is a 19th-century liberal ideology advocating free markets, minimal government, and individual liberty. It emphasizes laissez-faire economics, free trade, and limited state intervention, prioritizing economic freedom as the foundation for social and political progress.'
+            },
+            'Neoliberalism': {
+                name: 'Neoliberalism',
+                desc: 'Neoliberalism supports market-oriented reforms such as privatization, deregulation, free trade, and reduced state intervention. It emphasizes economic efficiency, global integration, competition, and strengthening market mechanisms, believing these policies promote growth, innovation, and individual opportunity within modern economies.'
+            },
+            'Geoneoliberalism': {
+                name: 'Geoneoliberalism',
+                desc: 'Geoneoliberalism combines neoliberal market principles—privatization, deregulation, free trade, and limited state intervention—with Georgist land-value taxation. It treats natural resources as a shared commons and supports proactive military intervention and global engagement to protect markets, secure national interests, and promote individual opportunity worldwide.'
+            },
+            'Ordoliberalism': {
+                name: 'Ordoliberalism',
+                desc: 'Ordoliberalism is a German liberal tradition advocating strong but limited government that ensures competitive markets. The state sets rules to prevent monopolies, maintain stability, and protect economic order, balancing free enterprise with regulation designed to preserve fair competition.'
+            },
+
+            // conservatives
+
+            'Paleoconservatism': {
+                name: 'Paleoconservatism',
+                desc: 'Paleoconservatism stresses tradition, limited government, cultural continuity, and non-interventionist foreign policy. It criticizes globalization, mass immigration, and expansive federal power, promoting localism, heritage, and social cohesion while rejecting technocratic or overly ideological approaches to politics and society.'
+            },
+            'Geoconservatism': {
+                name: 'Geoconservatism',
+                desc: 'Geoconservatism combines conservative principles with Georgist land-value ideas. It emphasizes tradition, social cohesion, and local community structures, supports limited government funded by land-value taxation, and treats natural resources as a shared commons, balancing respect for cultural continuity with economic and environmental stewardship.'
+            },
+            'Conservatarianism': {
+                name: 'Conservatarianism',
+                desc: 'Conservatarianism blends conservative social principles with libertarian economic policies. It emphasizes tradition, personal responsibility, and cultural continuity while supporting free markets, limited government, strong property rights, and minimal state intervention in individuals’ lives.'
+            },
+
+            // libleft
+
+            // Anarchists
+
             'Anarcho-Communism': {
                 name: 'Anarcho-Communism',
                 desc: 'Anarcho-Communism is a stateless, classless ideology advocating the abolition of private property and hierarchies. It promotes common ownership of resources, voluntary cooperation, and direct democracy, aiming for a society where goods and services are freely distributed according to need.'
+            },
+            'Anarcho-Syndicalism': {
+                name: 'Anarcho-Syndicalism',
+                desc: 'Anarcho-Syndicalism is a libertarian-left ideology advocating worker self-management and direct control of production through federated labor unions. It seeks to abolish the state and capitalism, replacing them with decentralized, democratic workplaces and cooperative networks that coordinate economic and social life.'
             },
             'Autonomism': {
                 name: 'Autonomism',
@@ -241,82 +331,68 @@
                 name: 'Ego-Communism',
                 desc: 'Ego-Communism is a libertarian far-left ideology combining egoist philosophy with anarchist communism. It seeks personal fulfillment through abolishing capitalism and wage labor, emphasizing self-liberation over collective ideals while promoting progressive, anti-authoritarian social structures.'
             },
-            'Anarcho-Mutualism': {
-                name: 'Anarcho-Mutualism',
-                desc: 'Anarcho-Mutualism is a libertarian socialist ideology advocating a stateless society based on voluntary exchange, mutual aid, and cooperative ownership. It supports markets without capitalism, labor-based property, and reciprocity, aiming to balance individual freedom with social equality.'
-            },
-            'Minarcho-Mutualism': {
-                name: 'Minarcho-Mutualism',
-                desc: 'Minarcho-Mutualism is a libertarian socialist ideology combining mutualist economics with a minimal state. It supports cooperative ownership, voluntary exchange, and labor-based property while retaining a small government limited to protecting individual rights and enforcing contracts.'
-            },
-            'Minarcho-Socialism': {
-                name: 'Minarcho-Socialism',
-                desc: 'Minarcho-Socialism is a libertarian left ideology combining worker-owned means of production with a minimal state. It seeks to protect workers’ rights and provide limited welfare while keeping industry independent of government, blending socialism with constrained, non-anarchist governance.'
-            },
             'Platformism': {
                 name: 'Platformism',
                 desc: 'Platformism is an anarchist ideology advocating tightly organized groups united by shared principles. It emphasizes tactical and theoretical unity, collective responsibility, and federalism, aiming to influence working-class movements while rejecting internal disagreement and vanguard models.'
             },
-            'ClassLib': {
-                name: 'Classical liberalism',
-                desc: 'Classical liberalism emphasizes individual liberty, private property, free markets, limited government, and the rule of law. It argues that society prospers when state power is restrained, civil rights are protected, and people freely pursue their own economic and personal interests.'
+            'Soulism': {
+                name: 'Soulism',
+                desc: 'Soulism is a libertarian-left, off‑compass ideology from online meme culture that rejects all hierarchies, including the state and capitalism. It promotes total individual freedom, the abolition of property and material constraints, and a cooperative, anti-authoritarian society.'
             },
-            'NeoClassLib': {
-                name: 'Neoclassical liberalism',
-                desc: 'Neoclassical liberalism updates classical liberalism by accepting a limited regulatory state while prioritizing free markets and competition. It supports individual rights, economic openness, and modest government intervention aimed at ensuring fairness, stability, and the conditions necessary for market efficiency.'
-            },
-            'Neolibertarianism': {
-                name: 'Neolibertarianism',
-                desc: 'Neolibertarianism blends libertarian principles with pragmatic acceptance of limited government activism. It endorses free markets and personal liberty but supports targeted state action, particularly in security and foreign policy, believing that proactive engagement can safeguard freedom and promote global stability.'
-            },
-            'Fusionism': {
-                name: 'Fusionism',
-                desc: 'Fusionism merges libertarian economics with traditional conservative social values. It argues that free markets and limited government best preserve virtue, community, and individual responsibility, uniting right-leaning libertarians and conservatives around a shared belief in order, liberty, and moral tradition.'
-            },
-            'Neoliberalism': {
-                name: 'Neoliberalism',
-                desc: 'Neoliberalism supports market-oriented reforms such as privatization, deregulation, free trade, and reduced state intervention. It emphasizes economic efficiency, global integration, competition, and strengthening market mechanisms, believing these policies promote growth, innovation, and individual opportunity within modern economies.'
-            },
-            'Paleoconservatism': {
-                name: 'Paleoconservatism',
-                desc: 'Paleoconservatism stresses tradition, limited government, cultural continuity, and non-interventionist foreign policy. It criticizes globalization, mass immigration, and expansive federal power, promoting localism, heritage, and social cohesion while rejecting technocratic or overly ideological approaches to politics and society.'
-            },
-            'Ordoliberalism': {
-                name: 'Ordoliberalism',
-                desc: 'Ordoliberalism is a German liberal tradition advocating strong but limited government that ensures competitive markets. The state sets rules to prevent monopolies, maintain stability, and protect economic order, balancing free enterprise with regulation designed to preserve fair competition.'
-            },
-            'Agorism': {
-                name: 'Agorism',
-                desc: 'Agorism is a libertarian strategy promoting counter-economics voluntary, non-state markets operating outside government control. It aims to make the state obsolete through peaceful black- and grey-market activity, fostering a society built on free exchange, self-reliance, and anti-authoritarian principles.'
-            },
-            'Alt-Right': {
-                name: 'Alt-Right',
-                desc: 'The Alt-Right is a far-right, anti-establishment movement characterized by ethnonationalism, rejection of mainstream conservatism, and opposition to multiculturalism. It promotes internet-based activism, cultural identity narratives, and critiques of liberal democracy.'
-            },
-            'LeftRoth': {
-                name: 'Left Rothbardianism',
-                desc: 'Left Rothbardianism blends Murray Rothbard’s anarcho-capitalism with left-libertarian concerns about corporate power and social justice. It supports stateless markets, strong property rights, anti-militarism, and opposition to state-backed privilege, emphasizing decentralization and voluntary arrangements that reduce economic hierarchy.'
-            },
-            'Geolibertarianism': {
-                name: 'Geolibertarianism',
-                desc: 'Geolibertarianism combines libertarian principles with Henry George’s belief that land value belongs to everyone. It supports minimal government funded by land value taxation, free markets, and strong personal rights while distinguishing between private improvements and commonly owned natural resources.'
-            },
-            'Green-Libertarianism': {
-                name: 'Green Libertarianism',
-                desc: 'Green Libertarianism merges ecological concern with libertarian values. It supports decentralized environmental solutions, market-based ecological stewardship, property-rights-driven conservation, and minimal state intervention, arguing that sustainability and personal freedom can coexist through voluntary action and local community initiatives.'
-            },
-            'Anarcho-Primitivism': {
-                name: 'Anarcho-Primitivism',
-                desc: 'Anarcho-Primitivism critiques industrial society and advocates a return to simpler, pre-civilized forms of living. It argues that modern technology, hierarchy, and mass systems alienate humans from nature, promoting small-scale, decentralized, and ecologically harmonious ways of life.'
+
+            // Minarchists
+
+            'Minarcho-Socialism': {
+                name: 'Minarcho-Socialism',
+                desc: 'Minarcho-Socialism is a libertarian left ideology combining worker-owned means of production with a minimal state. It seeks to protect workers’ rights and provide limited welfare while keeping industry independent of government, blending socialism with constrained, non-anarchist governance.'
             },
             'Guild-Socialism': {
                 name: 'Guild Socialism',
                 desc: 'Guild Socialism proposes worker-controlled industries organized into democratic guilds, cooperating through a decentralized socialist structure. It stresses workplace self-management, local autonomy, and balancing economic coordination with social freedom, offering a middle ground between state socialism and market capitalism'
             },
-            'Green-Anarchism': {
-                name: 'Green Anarchism',
-                desc: 'Green Anarchism combines anarchism with radical environmentalism, rejecting industrialism and hierarchical institutions that harm ecosystems. It promotes decentralized communities, ecological living, mutual aid, and direct action, aiming to build sustainable societies free of domination and environmental exploitation.'
+            'Market-Socialism': {
+                name: 'Market Socialism',
+                desc: 'Market Socialism is a left-libertarian economic system that combines social ownership of the means of production with market mechanisms for allocation and pricing. It emphasizes worker cooperatives, decentralized decision-making, and voluntary exchange, aiming to balance economic efficiency with social equity and democratic control over workplaces.'
             },
+            'Geosyndicalism': {
+                name: 'Geosyndicalism',
+                desc: 'Geosyndicalism is a Georgist ideology combining worker self-management and land-value taxation. It supports a mostly free market rewarding productive work, allows limited statist property, and uses syndicalist methods like unionism and strikes to achieve reform.'
+            },
+            'Social-Georgism': {
+                name: 'Social Georgism',
+                desc: 'Social Georgism is a variant of Georgism that combines land-value taxation with support for a developed welfare state. It favors using LVT revenue to fund public services, attracts more statist or labour-oriented Georgists, and overlaps with social-democratic principles while remaining distinct from libertarian strands.'
+            },
+
+            // liberals
+
+            'Social-Democrat': {
+                name: 'Social Democracy',
+                desc: 'Social Democracy is an ideology that combines democratic governance with a mixed-market economy. It supports economic regulation, social welfare programs, and wealth redistribution to promote social justice and reduce inequality, while maintaining individual rights, political pluralism, and market mechanisms.'
+            },
+            'Social-Liberal': {
+                name: 'Social Liberalism',
+                desc: 'Social Liberalism is an ideology that emphasizes individual rights, civil liberties, and political freedom while supporting government intervention to ensure social justice, equal opportunity, and protection from economic and social inequalities. It balances personal liberty with policies that promote welfare and social cohesion.'
+            },
+            'Liberal-Socialist': {
+                name: 'Liberal Socialism',
+                desc: 'Liberal Socialism is an ideology that sees socialism as compatible with liberalism, advocating reformist, evolutionary change within liberal democracy. It supports unions, cooperatives, targeted nationalization, and expanded welfare, emphasizing freedom, humanism, and pragmatic social reform rather than strict Marxism.'
+            },
+
+            // conservatives
+
+            'Agrarian-Socialist': {
+                name: 'Agrarian Socialism',
+                desc: 'Agrarian Socialism is an ideology that combines communal or cooperative land ownership with the preservation of rural traditions, local customs, and social cohesion. It emphasizes decentralized governance, ethical stewardship of land, and sustaining cultural and agricultural practices while promoting economic equality within communities.'
+            },
+            'Distributist-Socialist': {
+                name: 'Distributist Socialism',
+                desc: 'Distributist Socialism advocates widespread ownership of productive property to promote economic equity and personal responsibility. It emphasizes local communities, cooperative enterprise, and ethical stewardship, aiming to decentralize economic power while supporting social welfare.'
+            },
+
+            // center
+
+            // Anarchists
+
             'Anarcho-Egoism': {
                 name: 'Anarcho-Egoism',
                 desc: 'Anarcho-Egoism, derived from Max Stirner, promotes radical individual autonomy and rejection of all imposed authority. It views social structures as voluntary associations formed for personal benefit, emphasizing self-interest, self-ownership, and freedom from moral, political, or societal obligations.'
@@ -324,6 +400,67 @@
             'Religious-Anarchism': {
                 name: 'Religious Anarchism',
                 desc: 'Religious Anarchism fuses spiritual or faith-based ethics with anarchist rejection of coercive authority. It promotes voluntary community, compassion, and moral autonomy while opposing the state, arguing that genuine spiritual practice favors decentralized, cooperative, and non-hierarchical social arrangements.'
+            },
+            'LeftRoth': {
+                name: 'Left Rothbardianism',
+                desc: 'Left Rothbardianism blends Murray Rothbard’s anarcho-capitalism with left-libertarian concerns about corporate power and social justice. It supports stateless markets, strong property rights, anti-militarism, and opposition to state-backed privilege, emphasizing decentralization and voluntary arrangements that reduce economic hierarchy.'
+            },
+            'Anarcho-Primitivism': {
+                name: 'Anarcho-Primitivism',
+                desc: 'Anarcho-Primitivism critiques industrial society and advocates a return to simpler, pre-civilized forms of living. It argues that modern technology, hierarchy, and mass systems alienate humans from nature, promoting small-scale, decentralized, and ecologically harmonious ways of life.'
+            },
+            'Green-Anarchism': {
+                name: 'Green Anarchism',
+                desc: 'Green Anarchism combines anarchism with radical environmentalism, rejecting industrialism and hierarchical institutions that harm ecosystems. It promotes decentralized communities, ecological living, mutual aid, and direct action, aiming to build sustainable societies free of domination and environmental exploitation.'
+            },
+            'Anarcho-Mutualism': {
+                name: 'Anarcho-Mutualism',
+                desc: 'Anarcho-Mutualism is a libertarian socialist ideology advocating a stateless society based on voluntary exchange, mutual aid, and cooperative ownership. It supports markets without capitalism, labor-based property, and reciprocity, aiming to balance individual freedom with social equality.'
+            },
+            'Geoanarchism': {
+                name: 'Geoanarchism',
+                desc: 'Geoanarchism is an extreme libertarian ideology combining anarchism with Georgist land principles. It advocates a stateless society where all individuals have equal rights to land, resolving land-use costs through polycentric law. It aligns with free markets, emphasizing voluntary, decentralized governance and individual responsibility.'
+            },
+
+            // Minarchists
+
+            'Green-Libertarianism': {
+                name: 'Green Libertarianism',
+                desc: 'Green Libertarianism merges ecological concern with libertarian values. It supports decentralized environmental solutions, market-based ecological stewardship, property-rights-driven conservation, and minimal state intervention, arguing that sustainability and personal freedom can coexist through voluntary action and local community initiatives.'
+            },
+            'Minarcho-Mutualism': {
+                name: 'Minarcho-Mutualism',
+                desc: 'Minarcho-Mutualism is a libertarian socialist ideology combining mutualist economics with a minimal state. It supports cooperative ownership, voluntary exchange, and labor-based property while retaining a small government limited to protecting individual rights and enforcing contracts.'
+            },
+            'Georgism': {
+                name: 'Georgism',
+                desc: 'Georgism is an economic and social philosophy that advocates for private ownership of improvements but considers land and natural resources as a common heritage. It supports funding public goods primarily through a land-value tax, aiming to promote economic efficiency, reduce inequality, and ensure equitable access to natural resources.'
+            },
+
+            // Liberals
+
+            'Progressive-Liberal': {
+                name: 'Progressive Liberalism',
+                desc: 'Progressive Liberalism is an ideology that emphasizes individual rights, civil liberties, and political freedom while supporting government action to promote social justice, equality, and opportunity. It balances personal liberty with reforms aimed at reducing economic and social inequalities and advancing societal progress.'
+            },
+            'Moderatism': {
+                name: 'Moderatism',
+                desc: 'Moderatism is an ideology that emphasizes balance, pragmatism, and gradual reform over radical change. It values compromise, political stability, and practical solutions, seeking to harmonize competing social, economic, and political interests while avoiding extremes.'
+            },
+            'Nordic-Model': {
+                name: 'Nordic model',
+                desc: 'The Nordic Model is an economic and social system combining a market-based economy with extensive welfare provisions and strong social safety nets. It emphasizes universal healthcare, education, and labor protections, aiming to balance economic efficiency, social equality, and individual opportunity.'
+            },
+            'Green-Liberal': {
+                name: 'Green liberalism',
+                desc: 'Green Liberalism is an ideology that combines liberal principles of individual rights, civil liberties, and political freedom with environmentalism. It advocates sustainable development, ecological responsibility, and policies that balance personal liberty with the protection and preservation of natural resources.'
+            },
+
+            // conservatives
+
+            'Christian-Democracy': {
+                name: 'Christian Democracy',
+                desc: 'Christian Democracy is a political ideology that blends social conservatism with social justice principles inspired by Christian ethics. It emphasizes community, family values, and moral responsibility while supporting democratic governance, social welfare, and a market economy guided by ethical considerations.'
             }
         }
 
@@ -343,8 +480,10 @@
             "Extremely Conservative,Very Conservative,Conservative,Neutral,Progressive,Very Progressive,Extremely Progressive")
         document.getElementById('h-label').innerHTML = setLabel(interventionism, 
             "Extremely Interventionist,Very Interventionist,Interventionist,Neutral,Isolationist,Very Isolationist,Extremely Isolationist")
+        document.getElementById('i-label').innerHTML = setLabel(propertarianism, 
+            "Extremely Propertarian,Very Propertarian,Propertarian,Neutral,Georgist,Very Georgist,Extremely Georgist")
 
-        console.log('Values:', authority, hierarchy, planning, collectivism, horun, nature, conservative, interventionism)
+        console.log('Values:', authority, hierarchy, planning, collectivism, horun, nature, conservative, interventionism, propertarianism)
         console.log('Ideologies object:', ideologies)
         console.log('Ideology texts:', ideologyTexts)
         const anarchy = (100 - authority).toFixed(1)
@@ -355,6 +494,7 @@
         const technology = (100 - nature).toFixed(1)
         const progressive = (100 - conservative).toFixed(1)
         const isolationism = (100 - interventionism).toFixed(1)
+        const georgism = (100 - propertarianism).toFixed(1)
 
         setBarValue('authority', authority)
         setBarValue('anarchy', anarchy)
@@ -372,6 +512,8 @@
         setBarValue('progressive', progressive)
         setBarValue('interventionism', interventionism)
         setBarValue('isolationism', isolationism)
+        setBarValue('propertarianism', propertarianism)
+        setBarValue('georgism', georgism)
 
 
         let ideology = ''
@@ -390,6 +532,7 @@
             dist += Math.pow(Math.abs(ideologies[name].f - nature), 2)
             dist += Math.pow(Math.abs(ideologies[name].g - conservative), 2)
             dist += Math.pow(Math.abs(ideologies[name].h - interventionism), 2)
+            dist += Math.pow(Math.abs(ideologies[name].i - propertarianism), 2)
             // ideologyToDistance[name] = dist
             ideologyIndexAndDistance.push({
             distance: dist,
@@ -468,9 +611,9 @@
             var c = document.createElement("canvas")
             var ctx = c.getContext("2d")
             c.width = 820;
-            c.height = 1360;
+            c.height = 1480;
             ctx.fillStyle = "#EEEEEE"
-            ctx.fillRect(0,0,820,1360);
+            ctx.fillRect(0,0,820,1480);
 
             function loadImage(src) {
                 return new Promise((resolve, reject) => {
@@ -497,7 +640,9 @@
                 loadImage('value_images/conservative.svg'),
                 loadImage('value_images/progressive.svg'),
                 loadImage('value_images/interventionism.svg'),
-                loadImage('value_images/isolationism.svg')
+                loadImage('value_images/isolationism.svg'),
+                loadImage('value_images/propertarianism.svg'),
+                loadImage('value_images/georgism.svg')
             ]).then(images => {
                 ctx.drawImage(images[0], 20, 170, 100, 100);  // authority
                 ctx.drawImage(images[1], 680, 170, 100, 100); // anarchy
@@ -515,6 +660,8 @@
                 ctx.drawImage(images[13], 680, 890, 100, 100); // progressive
                 ctx.drawImage(images[14], 20, 1010, 100, 100); // interventionism
                 ctx.drawImage(images[15], 680, 1010, 100, 100); // isolationism
+                ctx.drawImage(images[16], 20, 1130, 100, 100); // propertarianism
+                ctx.drawImage(images[17], 680, 1130, 100, 100); // georgism
 
             ctx.fillStyle = '#222222'
             ctx.fillRect(120, 180, 560, 80)
@@ -525,6 +672,7 @@
             ctx.fillRect(120, 780, 560, 80)
             ctx.fillRect(120, 900, 560, 80)
             ctx.fillRect(120, 1020, 560, 80)
+            ctx.fillRect(120, 1140, 560, 80)
             ctx.fillStyle = '#cecece'
             ctx.fillRect(120, 184, 5.6 * authority - 2, 72)
             ctx.fillStyle = '#111111'
@@ -557,10 +705,14 @@
             ctx.fillRect(120, 1024, 5.6 * interventionism - 2, 72)
             ctx.fillStyle = '#8d819fff'
             ctx.fillRect(682 - 5.6 * isolationism, 1024, 5.6 * isolationism - 2, 72)
+            ctx.fillStyle = 'rgb(175, 175, 175)'
+            ctx.fillRect(120, 1144, 5.6 * propertarianism - 2, 72)
+            ctx.fillStyle = '#427328ff'
+            ctx.fillRect(682 - 5.6 * georgism, 1144, 5.6 * georgism - 2, 72)
             ctx.fillStyle = '#222222'
             ctx.font = '700 70px Montserrat'
             ctx.textAlign = 'left'
-            ctx.fillText('LibertarianValues 2.0', 20, 90)
+            ctx.fillText('LibertarianValues 3.0', 20, 90)
             ctx.font = '50px Montserrat'
             ctx.fillText(ideologyTexts[closestMatch.name].name, 20, 140)
 
@@ -574,6 +726,7 @@
             if (nature > 30) {ctx.fillText(nature + '%', 130, 837.5)}
             if (conservative > 30) {ctx.fillText(conservative + '%', 130, 957.5)}
             if (interventionism > 30) {ctx.fillText(interventionism + '%', 130, 1077.5)}
+            if (propertarianism > 30) {ctx.fillText(propertarianism + '%', 130, 1197.5)}
             ctx.textAlign = 'right'
             if (anarchy > 30) {ctx.fillText(anarchy + '%', 670, 237.5)}
             if (heterarchy > 30) {ctx.fillText(heterarchy + '%', 670, 357.5)}
@@ -583,15 +736,16 @@
             if (technology > 30) {ctx.fillText(technology + '%', 670, 837.5)}
             if (progressive > 30) {ctx.fillText(progressive + '%', 670, 957.5)}
             if (isolationism > 30) {ctx.fillText(isolationism + '%', 670, 1077.5)}
+            if (georgism > 30) {ctx.fillText(georgism + '%', 670, 1197.5)}
 
             ctx.fillStyle = '#222222'
             ctx.font = '700 20px Montserrat'
             ctx.textAlign = 'left';
-            wrapText(ctx, ideologyTexts[closestMatch.name].desc, 20, 1150, 790, 25);
+            wrapText(ctx, ideologyTexts[closestMatch.name].desc, 20, 1270, 790, 25);
             ctx.fillStyle = '#222222'
             ctx.font = '300 30px Montserrat'
             ctx.textAlign = 'right';
-            ctx.fillText('neomediavalist.github.io/libvalues/', 780, 1335)
+            ctx.fillText('neomediavalist.github.io/libvalues/', 780, 1455)
             ctx.textAlign = 'center'
             ctx.fillText('' + document.getElementById('a-label').innerHTML, 400, 175)
             ctx.fillText('' + document.getElementById('b-label').innerHTML, 400, 295)
@@ -601,6 +755,7 @@
             ctx.fillText('' + document.getElementById('f-label').innerHTML, 400, 775)
             ctx.fillText('' + document.getElementById('g-label').innerHTML, 400, 895)
             ctx.fillText('' + document.getElementById('h-label').innerHTML, 400, 1015)
+            ctx.fillText('' + document.getElementById('i-label').innerHTML, 400, 1135)
 
             document.getElementById("banner-image").src = c.toDataURL();
             c.style.display = 'block';
